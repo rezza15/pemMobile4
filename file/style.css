@@ -1,0 +1,71 @@
+/* Mengatur tampilan tabel */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  th,
+  td {
+    text-align: center;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #0a080a;
+    color: white;
+  }
+  
+  /* Mengatur tampilan kolom nama dan menjadikannya rata kiri */
+  td:nth-child(3) {
+    text-align: left;
+  }
+  
+  /* Mengatur tampilan nomor urut dan kolom nilai menjadi rata tengah */
+  td:nth-child(1),
+  td:nth-child(n+4) {
+    text-align: center;
+  }
+  
+  /* Mengatur tampilan bagian navigasi */
+  div {
+    margin-top: 20px;
+    display: flex; /* menambahkan properti display flex */
+    justify-content: flex-end; /* menambahkan properti justify-content flex-end */
+  }
+  
+  a {
+    text-decoration: none;
+    padding: 5px;
+    background-color: #141414;
+    color: white;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+  
+  .pagination {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px auto;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+  
+  /* Mengatur tampilan garis vertikal pada tabel */
+  td,
+  th {
+  border: 1px solid black;
+  }
